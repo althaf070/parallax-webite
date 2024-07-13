@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    gap: 12px;
+    position: fixed;
+    right: 0;
+    margin-right: 50px;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+header div {
+    font-size: 19px;
+    font-weight: 900;
+    color: #F5F5F5;
+}
+.bimg1, .bimg2, .bimg3, .bimg4 {
+    position: relative;
+    opacity: 0.95;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.bimg1 {
+    background-image: url("./asset/fabrizio-conti-c3wsMnxQZDw-unsplash.jpg");
+    min-height: 100vh;
+}
+.bimg2 {
+    background-image: url("./asset/pic2.jpg");
+    min-height: 400px;
+}
+.bimg3 {
+    background-image: url("./asset/pic3.jpg");
+    min-height: 400px;
+}
+.bimg4 {
+    background-image: url("./asset/pic4.jpg");
+    min-height: 400px;
+}
+section {
+    text-align: center;
+    padding: 50px 80px;
+}
+.sec-dark {
+    background-color: #17153B;
+    color: #F5F5F5;
+}
+.sec-white {
+    background-color: #F5F5F5;
+    color: #17153B;
+}
+.sec-light {
+    background-color: #DDE6ED;
+    color: #17153B;
+}
+.ptext {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    letter-spacing: 8px;
+    top: 50%;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #17153B;
+    color: #F5F5F5;
+    padding: 14px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px royalblue;
+}
+@media screen and (max-width: 768px) {
+
+    header div {
+        font-size: 16px;
+    }
+    .ptext {
+        font-size: 24px;
+    }
+    section {
+        padding: 30px 20px;
+    }
+    .bimg1, .bimg2, .bimg3, .bimg4 {
+        background-attachment: scroll;
+        min-height: 300px;
+    }
+}
+@media screen and (max-width: 480px) {
+ 
+    header div {
+        font-size: 14px;
+    }
+    .ptext {
+        font-size: 20px;
+    }
+    section {
+        padding: 20px 10px;
+    }
+}
